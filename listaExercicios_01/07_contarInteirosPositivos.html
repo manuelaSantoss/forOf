@@ -5,12 +5,19 @@
     // let listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
     //Identifique APENAS os números INTEIROS e POSITIVOS. Adicione-os em uma lista e apresente ao fim do programa, indicando também quantos números foram localizados.
 
-    //ENTRADA
-
+    listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
+    let inteirosPositivos = [];
 
     //PROCESSAMENTO
 
+    for (numero of listaDeNumeros) {
+        if (numero / parseInt(numero) === 1 && numero > 0) {
+            inteirosPositivos.push(numero)
+        }
+    }
 
     //SAÍDA
+
+    document.write(`Os números positivos e inteiros são: ${inteirosPositivos.join(", ")} e são ${inteirosPositivos.length} números`)
 
 </script>

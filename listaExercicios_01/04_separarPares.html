@@ -5,12 +5,18 @@
     // let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
     //Apresente apenas os números pares. Apresente também a quantidade de números pares que existem e apresente a quantidade de elementos da lista original.
 
-    //ENTRADA
+    let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let pares = []
+    let impares = [];
+    for (numero of listaDeNumeros) {
+        if (numero % 2 === 0) {
+            pares.push(numero)
+        } else {
+            impares.push(numero)
+        }
+    }
 
+    document.write(`Numeros pares: ${pares} <br> Numeros Ímpares: ${impares}`)
 
-    //PROCESSAMENTO
-
-
-    //SAÍDA
 
 </script>
